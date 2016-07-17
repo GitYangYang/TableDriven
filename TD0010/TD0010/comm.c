@@ -36,3 +36,19 @@ int td0011(const char * name, const char * value)
 
 	return FIND ? 0 : -1;
 }
+
+int td0012(const char * name, const char * value)
+{
+	int i;
+	BOOL FIND= FALSE;
+	for(i = 0; i < kCount; i++)
+	{
+		if(strcmp(name, gMcr[i].key) == 0)
+		{
+			strcpy(gMcr[i].pointer, value);
+			FIND = TRUE;
+		}
+	}
+
+	return FIND ? 0 : -1;
+}

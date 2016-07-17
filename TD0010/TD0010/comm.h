@@ -14,5 +14,5 @@
 
 int td0010(const char * name, const char * value);
 int td0011(const char * name, const char * value);
-
+int td0012(const char * name, const char * value);
 #endif

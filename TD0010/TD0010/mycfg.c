@@ -39,5 +39,13 @@ NCR gNcr[] = {
 	{ "organ", gCfg.Organ},
 	{ "tradedate", gCfg.TradeDate}
 };
-
 int jCount = sizeof(gNcr) / sizeof(NCR);
+
+// 指定初始化的方法，C99标准
+MCR gMcr[] = {
+	{.key = "appid", .pointer = gCfg.AppId},
+	{ .key = "optusr", .pointer = gCfg.OptUsr},
+	{ .key = "organ", .pointer = gCfg.Organ},
+	{ .key = "tradedate", .pointer = gCfg.TradeDate}
+};
+int kCount = sizeof(gMcr) / sizeof(MCR);

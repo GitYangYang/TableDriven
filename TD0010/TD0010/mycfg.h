@@ -39,7 +39,14 @@ extern int jCount;
 
 extern NCR gNcr[];
 
+typedef struct _NewLinuxCfgRecord{
+	char key[32+1];
+	char * pointer;
+}MCR, * pMCR;
 
+extern int kCount;
+
+extern MCR gMcr[];
 
 #endif
 

@@ -35,6 +35,13 @@ int main(int argc, char **argv)
 	td0011("optusr", "admin");
 	td0011("organ", "1011");
 	td0011("tradedate", "20161111");
+	
+	Print();
+	printf("-----------------------\n");
+	td0011("appid", "Y012");
+	td0011("optusr", "admin");
+	td0011("organ", "1012");
+	td0011("tradedate", "20161212");
 
 	Print();
 	return 0;
